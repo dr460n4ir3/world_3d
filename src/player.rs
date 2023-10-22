@@ -23,13 +23,15 @@ fn spawn_player(
 
     commands.spawn(player);
 }
-// pub fn create_player(
+
+// // This will spawn a capsule instead of a cube need to adjust the camera and size of the capsule
+// fn spawn_player(
 //     mut commands: Commands,
 //     mut meshes: ResMut<Assets<Mesh>>,
 //     mut materials: ResMut<Assets<StandardMaterial>>,
 // ) {
 //     // Lets create our basic Player object
-//     commands.spawn_bundle(PbrBundle {
+//     let player = PbrBundle {
 //         mesh: meshes.add(Mesh::from(shape::Capsule {
 //             radius: 1.,
 //             rings: 10,
@@ -38,9 +40,9 @@ fn spawn_player(
 //             longitudes: 4,
 //             ..Default::default()
 //         })),
-//         material: materials.add(Color::rgb(0., 0.8, 0.8).into()),
-//         transform: Transform::from_translation(Vec3::new(4., 0., 4.)),
-//         ..Default::default()
-//     });
-
+//         material: materials.add(Color::ORANGE.into()),
+//         transform: Transform::from_xyz(0.0, 0.5, 0.0),
+//         ..default()
+//     };
+//     commands.spawn(player);
 // }
