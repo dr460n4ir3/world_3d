@@ -12,7 +12,12 @@ use world::WorldPlugin;
 
 fn main() {
     App::new()
-        .add_plugins((DefaultPlugins, PlayerPlugin, CameraPlugin, WorldPlugin, /*ControllerPlugin*/))
+        .add_plugins((
+            DefaultPlugins,
+            PlayerPlugin,
+            CameraPlugin,
+            WorldPlugin, /*ControllerPlugin*/
+        ))
         .run();
 }
 
